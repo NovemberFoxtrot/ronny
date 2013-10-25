@@ -22,7 +22,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	ytemplate.ThePool.Pools["index"].Execute(w, nil)
 }
 
-func New() {
+func New(port string) {
 	wd, err := os.Getwd()
 	yeasy.CheckError(err)
 
@@ -32,6 +32,6 @@ func New() {
 
 	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir(wd+`/public`))))
 
-	err = http.ListenAndServe(":9999", nil)
+	err = http.ListenAndServe(":"+port, nil)
 	yeasy.CheckError(err)
 }
