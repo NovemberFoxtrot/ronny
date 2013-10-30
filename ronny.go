@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	var thePort = flag.String("port", "8080", "port to launch server on")
+	var thePort = flag.String("port", "8080", "serve port")
 
 	flag.Parse()
 
