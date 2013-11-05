@@ -23,6 +23,8 @@ func ImageHandler(w http.ResponseWriter, r *http.Request) {
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	ytemplate.ThePool.Fill("index", "templates/layout.html", "templates/index.html")
+	r.ParseForm()
+	fmt.Println(r.Form)
 
 	ytemplate.ThePool.Pools["index"].Execute(w, nil)
 }
