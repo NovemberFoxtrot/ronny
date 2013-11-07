@@ -15,7 +15,7 @@ type Pool struct {
 
 func render(filenames ...string) *template.Template {
 	t := template.New("layout")
-	t.Delims("//", "//")
+	t.Delims(":)", ":)")
 
 	t, err := t.ParseFiles(filenames...)
 	yeasy.CheckError(err)
