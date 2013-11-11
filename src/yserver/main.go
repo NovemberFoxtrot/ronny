@@ -17,6 +17,11 @@ func TwoHandler(w http.ResponseWriter, r *http.Request) {
 	ytemplate.ThePool.Pools["two"].Execute(w, nil)
 }
 
+func ThreeHandler(w http.ResponseWriter, r *http.Request) {
+	ytemplate.ThePool.Fill("three", "templates/layout3.html")
+	ytemplate.ThePool.Pools["three"].Execute(w, nil)
+}
+
 func MediaHandler(w http.ResponseWriter, r *http.Request) {
 	ytemplate.ThePool.Fill("media", "templates/layout.html", "templates/media.html")
 	ytemplate.ThePool.Pools["media"].Execute(w, nil)
@@ -43,6 +48,7 @@ func New(port string) {
 	http.HandleFunc("/media", MediaHandler)
 	http.HandleFunc("/magic", MagicHandler)
 	http.HandleFunc("/2", TwoHandler)
+	http.HandleFunc("/3", ThreeHandler)
 
 	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir(wd+`/public`))))
 
