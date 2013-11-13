@@ -43,14 +43,15 @@ func New(port string) {
 	wd, err := os.Getwd()
 	yeasy.CheckError(err)
 
-	http.HandleFunc("/", IndexHandler)
-	http.HandleFunc("/images/", ImageHandler)
-	http.HandleFunc("/media", MediaHandler)
-	http.HandleFunc("/magic", MagicHandler)
-	http.HandleFunc("/2", TwoHandler)
-	http.HandleFunc("/3", ThreeHandler)
+	//http.HandleFunc("/", IndexHandler)
+	//http.HandleFunc("/images/", ImageHandler)
+	//http.HandleFunc("/media", MediaHandler)
+	//http.HandleFunc("/magic", MagicHandler)
+	//http.HandleFunc("/2", TwoHandler)
+	//http.HandleFunc("/3", ThreeHandler)
 
 	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir(wd+`/public`))))
+	http.Handle("/", http.StripPrefix("/", http.FileServer(http.Dir(wd+`/templates`))))
 
 	err = http.ListenAndServe(":"+port, nil)
 	yeasy.CheckError(err)
