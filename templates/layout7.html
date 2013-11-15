@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+
+		<title>Font Size Changable Page</title>
+
+		<link href="/public/css/html5reser-1.6.1.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/public/css/main7.css" rel="stylesheet" type="text/css" media="all">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>	
+		<script type="text/javascript" src="/public/js/jquery.fontSizer.js"></script>	
+
+		<!--[if lt IE9]>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div id="top">
+			<div id="header">
+				<h1>My Web Site!!</h1>
+
+				<ul class="navi">
+					<li><a href="#top">    <img src="/public/img/7/menu01.jpg" alt="home"         width="164" height="62" /></a></li>
+					<li><a href="#about">  <img src="/public/img/7/menu02.jpg" alt="start"        width="164" height="62" /></a></li>
+					<li><a href="#gallary"><img src="/public/img/7/menu03.jpg" alt="gallery"      width="164" height="62" /></a></li>
+					<li><a href="#dogs">   <img src="/public/img/7/menu04.jpg" alt="dog picture"  width="164" height="62" /></a></li>
+					<li><a href="#cats">   <img src="/public/img/7/menu05.jpg" alt="cate picture" width="164" height="62" /></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="contents">
+			<div id="contents_box" class="fs-text">
+				<div id="control-wrap">
+					<h2 id="about">Start</h2>
+					<img src="/public/img/7/img01.jpg" alt="" width="300" height="250" class="imgL shadow">
+					<p>このWebサイトはテキストと写真の画像で構成されたWebページになっております。また右上の「＋」「ー」ボタンから、コンテンツ内の文字サイズの大きさに自由に変更・調整することが可能です。</p>
+					<p>このWebサイトはテキストと写真の画像で構成されたWebページになっております。また右上の「＋」「ー」ボタンから、コンテンツ内の文字サイズの大きさに自由に変更・調整することが可能です。</p>
+					<p class="pagetop"><a href="#top">▲</a></p>
+
+					<h2 id="gallery">Gallary</h2>
+					<img src="/public/img/7/img02.jpg" alt="" width="300" height="250" class="imgR radius">
+					<p>このWebサイトはテキストと写真の画像で構成されたWebページになっております。また右上の「＋」「ー」ボタンから、コンテンツ内の文字サイズの大きさに自由に変更・調整することが可能です。</p>
+					<p>このWebサイトはテキストと写真の画像で構成されたWebページになっております。また右上の「＋」「ー」ボタンから、コンテンツ内の文字サイズの大きさに自由に変更・調整することが可能です。</p>
+					<p class="pagetop"><a href="#top">▲</a></p>
+
+					<h2 id="dogs">dog picture</h2>
+					<img src="/public/img/7/img03.jpg" alt="" width="300" height="250" class="imgL radius2">
+					<p>このWebサイトはテキストと写真の画像で構成されたWebページになっております。また右上の「＋」「ー」ボタンから、コンテンツ内の文字サイズの大きさに自由に変更・調整することが可能です。</p>
+					<p>このWebサイトはテキストと写真の画像で構成されたWebページになっております。また右上の「＋」「ー」ボタンから、コンテンツ内の文字サイズの大きさに自由に変更・調整することが可能です。</p>
+					<p class="pagetop"><a href="#top">▲</a></p>
+
+					<h2 id="cats">cat picture</h2>
+					<img src="/public/img/7/img04.jpg" alt="" width="300" height="250" class="imgR rotate">
+					<p>このWebサイトはテキストと写真の画像で構成されたWebページになっております。また右上の「＋」「ー」ボタンから、コンテンツ内の文字サイズの大きさに自由に変更・調整することが可能です。</p>
+					<p>このWebサイトはテキストと写真の画像で構成されたWebページになっております。また右上の「＋」「ー」ボタンから、コンテンツ内の文字サイズの大きさに自由に変更・調整することが可能です。</p>
+					<p class="pagetop"><a href="#top">▲</a></p>
+				</div>
+			</div>
+
+			<p id="copy">Copyright &copy; Muhahaha</p>
+		</div>
+
+		<script>
+			$(function(){
+				$('ul#controls a').fontSizer({
+					maxSize:  20,
+					minSize:  10,
+					increment: 2
+				})
+			});
+		</script>
+	</body>
+</html>

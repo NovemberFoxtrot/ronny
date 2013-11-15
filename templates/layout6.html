@@ -1,39 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-
-		<title>BOX</title>
-
+		<title>ボックス感のあるレイアウト</title>
 		<link href="/public/css/main6.css" rel="stylesheet" type="text/css" media="all" />
 		<link href="/public/css/crossFader.css" rel="stylesheet" type="text/css" media="all" />
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
-		<script src="/public/js/rollover.js" type="text/javascript"></script>
-		<script src="/public/js/jquery.crossFader.js" type="text/javascript"></script>
-
-		<script>
-			$(function() {
-					$('#slider').crossFader({
-						timer: 3000,
-						speed: 1000,
-						clickStep: false
-					});
-				});	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="js/rollover.js" type="text/javascript"></script>
+		<script src="js/jquery.crossFader.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#slider').crossFader({
+					timer: 3000,		// 次の画像表示までの時間
+					speed: 1000,		// 画像の切り替えスピード
+					clickStep: false	// 画像をクリックしたときの処理（trueで次の画像表示）
+				});
+			});
 		</script>
-	</head>
-
-	<body>
-		<div id="header">
-			<div class="inner">
-				<h1><a href="#"><img src="/public/img/6/logo.png" alt="BOX DESIGN" title="BOX DESIGN" class="rollover"></a></h1>
-
+</head>
+<body>
+	<div id="header">
+		<div class="inner">
+			<h1><a href="#"><img src="/public/img/6/logo.png" alt="BOX DESIGN" title="BOX DESIGN" class="rollover"></a></h1>
 				<div id="gnav">
 					<ul>
-						<li><a href="#"><img src="/public/img/6/gnav_01.png" alt="HOME"></a></li>
-						<li><a href="#"><img src="/public/img/6/gnav_02.png" alt="COMPANY"></a></li>
-						<li><a href="#"><img src="/public/img/6/gnav_03.png" alt="PRODUCTS"></a></li>
-						<li><a href="#"><img src="/public/img/6/gnav_04.png" alt="INQUERIES"></a></li>
+						<li><a href="#"><img src="/public/img/6/gnav_01.png" alt="ホーム"></a></li>
+						<li><a href="#"><img src="/public/img/6/gnav_02.png" alt="会社概要"></a></li>
+						<li><a href="#"><img src="/public/img/6/gnav_03.png" alt="製品情報"></a></li>
+						<li><a href="#"><img src="/public/img/6/gnav_04.png" alt="お問い合わせ"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -50,81 +45,76 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="box_L">
+					<div class="box_inner">
+						<h2><img src="/public/img/6/tit_information.png" alt="お知らせ"></h2>
+							<ul class="info">
+							<li><a href="#"><span>9999.99.99</span>社屋移転のお知らせ</a></li>
+								<li><a href="#"><span>9999.99.99</span>採用情報のお知らせ</a></li>
+								<li><a href="#"><span>9999.99.99</span>「GOOOOOD DESIGN賞」受賞しました</a></li>
+								<li><a href="#"><span>9999.99.99</span>そのほかのお知らせそのほかのお知らせそのほかのお知らせそのほかのお知らせそのほかのお知らせ</a></li>
+								<li><a href="#"><span>9999.99.99</span>社屋移転のお知らせ</a></li>
+								<li><a href="#"><span>9999.99.99</span>採用情報のお知らせ</a></li>
+								<li><a href="#"><span>9999.99.99</span>「GOOOOOD DESIGN賞」受賞しました</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="box_S">
+						<a href="#">
+							<div class="box_inner">
+								<img src="/public/img/6/sample_04.jpg">
+							</div>
+						</a>
+					</div>
+
+					<div class="box_CSS3">
+						<div class="box_inner">
+							<p>CSS3を使って、ボックスに影をつけました。画像は一切、使っていません。</p>
+							<p>IE8以下のユーザを考慮しなければ、細かな余白の計算や画像を用意することなく、簡単に実装できます。</p>
+						</div>
+					</div>
+
+					<div class="box_S">
+						<a href="#">
+							<div class="box_inner">
+								<img src="/public/img/6/sample_01.jpg">
+							</div>
+						</a>
+					</div>
+
+					<div class="box_S">
+						<a href="#">
+							<div class="box_inner">
+								<img src="/public/img/6/sample_02.jpg">
+							</div>
+						</a>
+					</div>
+
+					<div class="box_CSS3">
+						<a href="#">
+							<div class="box_inner">
+								<img src="/public/img/6/sample_03.jpg">
+							</div>
+						</a>
+					</div>
+
+					<div class="box_CSS3">
+						<a href="#">
+							<div class="box_inner">
+								<img src="/public/img/6/sample_05.jpg">
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="box_L">
-			<div class="box_inner">
-				<h2><img src="/public/img/6/tit_information.png" alt="NOTICE"></h2>
-
-				<ul class="info">
-					<li><a href="#"><span>9999.99.99</span>Company Move Notice</a></li>
-					<li><a href="#"><span>9999.99.99</span>ompany Move Notice</a></li>
-					<li><a href="#"><span>9999.99.99</span>mpany Move Notice</a></li>
-					<li><a href="#"><span>9999.99.99</span>pany Move Notice</a></li>
-					<li><a href="#"><span>9999.99.99</span>any Move Notice</a></li>
-					<li><a href="#"><span>9999.99.99</span>ny Move Notice</a></li>
-					<li><a href="#"><span>9999.99.99</span>y Move Notice</a></li>
-				</ul>
+			<div id="footer">
+				<div class="inner">
+					<p class="logo_s"><img src="/public/img/6/logo_s.png"></p>
+					<p class="nav"><a href="#">ホーム</a> | <a href="#">会社概要</a> | <a href="#">製品情報</a> | <a href="#">お問い合わせ</a></p>
+				</div>
 			</div>
-		</div>
-
-		<div class="box_S">
-			<a href="#">
-				<div class="box_inner">
-					<img src="/public/img/6/sample_04.jpg">
-				</div>
-			</a>
-		</div>
-
-		<div class="box_CSS3">
-			<div class="box_inner">
-				<p>Using CSS3, a box!</p>
-				<p>CSS3, a box!</p>
-			</div>
-		</div>
-
-		<div class="box_S">
-			<a href="#">
-				<div class="box_inner">
-					<img src="/public/img/6/sample_01.jpg">
-				</div>
-			</a>
-		</div>
-
-		<div class="box_S">
-			<a href="#">
-				<div class="box_inner">
-					<img src="/public/img/6/sample02.jpg">
-				</div>
-			</a>
-		</div>
-
-		<div class="box_CSS3">
-			<a href="#">
-				<div class="box_inner">
-					<img src="/public/img/6/sample_03.jpg">
-				</div>
-			</a>
-		</div>
-
-		<div class="box_CSS3">
-			<a href="#">
-				<div class="box_inner">
-					<img src="/public/img/6/sample_05.jpg">
-				</div>
-			</a>
-		</div>
-
-		<div id="footer">
-			<div class="inner">
-				<p class="logo_s">
-					<img src="/public/img/6/logo_s.png">
-				</p>
-				<p>
-					<a href="#">HOME</a> | <a href="#">COMPANY</a> | <a href="#">PRODUCTS</a> | <a href="#">QUESTIONS</a>
-				</p>
-			</div>
-		</div>
 	</body>
 </html>
