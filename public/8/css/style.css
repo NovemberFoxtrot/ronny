@@ -1,0 +1,418 @@
+@import url(http://fonts.googleapis.com/css?family=Satisfy)
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,dd,dt,dl,
+a, ul, li,figure, figcaption, footer, header, hgroup
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a img {
+  border: none;
+}
+
+
+a {
+	text-decoration: none;
+	color: #00BFFF;
+}
+
+a:hover {
+	color: #00D4FF;
+	text-decoration: underline;
+}
+
+a:hover img {
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+	opacity: 0.75;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.4em;
+	color: #3F312B;
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	line-height: 1.6;
+	letter-spacing: 0.1em;
+	background-color: #F8F4E6;
+	border-top: 10px double #ad051E;
+}
+
+.center {
+	text-align: center;
+}
+
+.clearfix {
+	overflow: hidden;
+	*zoom: 1;
+}
+
+.small {
+	font-size: .7em;
+}
+
+.green {
+	color: #38B48B;
+}
+
+.pink {
+	color: #F4B3C2;
+}
+
+.blue {
+	color: #274A78;
+}
+
+.orange {
+	color: #F39800;
+}
+
+/* header font */
+.header, .footer {
+	width: 100%;
+}
+
+.header, .footer {
+	background-image: url(/public/8/images/line-header.png);
+	background-repeat: repeat-x;
+}
+
+.header {
+	padding: 20px;
+	margin-bottom: 20px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0 100%;	
+}
+
+.footer {
+	text-align: center;
+	padding: 20px 0;
+	clear: both;
+	background-position: 0 0;
+	font-size: .8em;
+}
+
+.site-title {
+	color: #AD051E;
+	margin: 0 auto;
+}
+
+.site-title span {
+	display: block;
+	font-family: 'Satisfy', cursive;
+	font-size: 3em;
+}
+
+.menu-title {
+	display: none;
+}
+
+.navi {
+	margin: 20px auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-left: 1px dotted #AD051E;
+}
+
+.navi li {
+	width: 25%;
+	float: left;
+	text-align: center;
+	border-right: 1px dotted #AD051E;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 1.2em;
+}
+
+.navi a {
+	color: #AD051E;
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	padding: 8px 0;
+}
+
+.navi a:hover, .navi a:active {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #AD051E;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.navi i {
+	font-size: 1.6em;
+	margin-right: 10px;
+}
+
+.main {
+	width: 480px;
+	height: 260px;
+	margin: 10px auto;
+	padding: 20px 480px 20px 0;
+	background: url(/public/8/images/bg_main.png) no-repeat 100% 0;
+}
+
+.main h2 {
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #3F312B;
+	padding-bottom: 10px;
+}
+
+.services {
+	width: 90%;
+	margin: 20px;
+	text-align: center;
+}
+
+.services li {
+	width: 23%;
+	-webkit-box-sizing: border-box;
+	-mox-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 300px;
+	padding: 1em;
+	float: left;
+	margin: 1%;
+	position: relative;
+	border: 1px dashed #3F312B;
+}
+
+.services li:hover, .services li:active {
+	background-color: #897858;
+	color: #FFF;
+}
+
+.services li:hover i, .services li:active i {
+	color: #FFF;
+}
+
+.services i {
+	display: block;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+
+.services h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.services p {
+	text-align: left;
+}
+
+.box-link {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+}
+
+.wrap {
+	width: 90%;
+	margin: 20px auto;
+}
+
+.newsBox {
+	width: 60%;
+	float: left;
+}
+
+.infoBox {
+	width: 30%;
+	float: right;
+}
+
+.newsBox, .infoBox {
+	padding: 1%;
+}
+
+.newsBox h4, .infoBox h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+	border-bottom: 5px double #3F312B;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.newsBox dt {
+	width: 8em;
+	font-weight: bold;
+	float: left;
+	clear: both;
+}
+
+.newsBox dd {
+	margin-left: 8em;
+}
+
+.newsBox dd {
+	margin-left: 8em;
+}
+
+.newsBox dt, .newsBox dd {
+	padding: 5px;
+	border-bottom: 1px dashed #94846A;
+}
+
+.infoBox dl {
+	background-color: #897858;
+	padding: 10px;
+}
+
+.infoBox dt, .infoBox dd {
+	background-color: #FFF;
+	padding: 3px 3px 3px 10px;
+}
+
+.infoBox {
+	font-weight: bold;
+}
+
+.infoBox dd {
+	padding-left: 1em;
+	border-bottom: 3px solid #897858;
+	display: block;
+}
+
+.infoBox i {
+	margin-right: 10px;
+	font-size: 1.2em;
+}
+
+@media screen and (max-width: 780px) {
+	.header {
+		padding-bottom: 30px;
+	}
+
+	.menu-title {
+		display: block;
+		background: #AD051E;
+		color: #FFF;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-ms-border-radius: 8px;
+		-o-border-radius: 8px;
+		border-radius: 8px;
+		font-family: 'Questrial', sans-serif;
+		padding: 10px 5px;
+		display: block;
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+	}
+
+	.menu-title {
+		font-size: 1.1em;
+		mergin-right: 10px;
+	}
+
+	.navi {
+		display: none;
+	}
+
+	.navi {
+		margin: 0;
+		border: none;
+	}
+
+	.navi li {
+		width: 98%;
+		float: none;
+		padding-left: 1em;
+		text-align: left;
+		border-right: 0px dotted #AD051E;
+		border-bottom: 1px dotted #AD051E;
+	}
+
+	.navi a {
+		width: 100%;
+	}
+
+	.navi a {
+		background: none;
+		color: #AD051E;
+	}
+
+	.main {
+		width: 98%;
+		background-position: 50% 0;
+		padding: 300px 1% 1% 1%;
+		height: auto;
+	}
+
+	.main h2 {
+		text-align: center;
+	}
+
+	.services li {
+		width: 98%;
+		float: none;
+		display: block;
+		min-height: 100px;
+	}
+
+	.newsBox, .infoBox {
+		width: 98%;
+		float: none;
+	}
+
+	.newsBox {
+		margin-bottom: 20px;
+	}
+
+	.newsBox dt {
+		float: none;
+		width: auto;
+		border: none;
+		font-weight: bold;
+	}
+
+	.newsBox dd {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.site-title span {
+		font-size: 1.8em;
+	}
+
+	.main img {
+		width: 100%;
+		height: auto;
+	}
+}
