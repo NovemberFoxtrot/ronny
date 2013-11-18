@@ -1,0 +1,217 @@
+@import url(http://fonts.googleapis.com/css?family=Sofia);
+
+/*--------------------------------------------------
+ *サンプルページ長文レイアウト用*
+ -------------------------------------------------*/
+html {
+  font-size: 62.5%;
+  margin:0;
+}
+
+body {
+  font-size: 1.4em;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  margin:0;
+  background-color: #F3F3F3;
+}
+
+.center {
+  text-align: center;
+}
+.clear{
+  clear:both;
+}
+.font-size8 {
+  font-size:0.8em;
+}
+.font-size18 {
+  font-size:1.8em;
+}
+.font-size24 {
+  font-size:2.4em;
+}
+.serif {
+  font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+}
+
+.gray-box {
+  padding:10px 10px 10px 40px;
+  background-color:#404040;
+  color:#FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom:20px;
+}
+.definition-list {
+  background: #FFF;
+  padding:10px;
+  margin-bottom:30px;
+}
+.definition-list dt {
+  border-left:3px solid #69B076;
+  background-color: #F3F3F3;
+  color:#69B076;
+  font-weight:bold;
+  padding:6px 10px;
+  margin-bottom:10px;
+}
+.definition-list dd {
+  margin-bottom:20px;
+}
+.sample h1 {
+  background-color: #FFF;
+  padding:20px 10px;
+  border-top:3px solid #69B076;
+  border-bottom:1px solid #E5E5E5;
+  font-size:2em;
+}
+.sample h2 {
+  background-color: #FFF;
+  border:1px solid #69B076;
+  border-left:6px solid #69B076;
+  font-size:1.6em;
+  padding:3px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.sample h3 {
+  background: url(../images/ico_h3.png) no-repeat 0 50%;
+  padding-left:30px;
+  font-size:1.4em;
+}
+.sample h4 {
+  font-size:1.2em;
+  border-bottom:1px dotted #69B076;
+}
+
+.multi-column-box {
+    width:100%;
+    display:table;
+  }
+  
+  .multi-column-box p {
+    width:28%;
+    padding:2%;
+    display:table-cell;
+    border-right:1px solid #CCC;
+  }
+  .multi-column-box p:last-child {
+    border-width:0; 
+  }
+
+
+/*--------------------------------------------------
+ *サンプルページデモデザイン用*
+ -------------------------------------------------*/
+.page-title {
+  font-size: 3em;
+  font-family: 'Sofia', cursive;
+  display:block;
+}
+
+.header, .footer {
+  width: 100%;
+}
+
+.header {
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: #FFF;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.footer {
+  background: #404040;
+  text-align: center;
+  font-size:.8em;
+  color:#FFF;
+  padding:20px 0;
+}
+.header h1 {
+  font-size:1em;
+}
+.wrapper {
+  width:960px;
+  margin:20px auto;
+  padding:20px 0 0;
+}
+.whiteBox {
+  background: #FFF;
+  padding:10px;
+}
+
+h2 {
+  font-size:1.8em;
+  margin:10px auto 30px;
+}
+h3 {
+  font-size:1.4em;
+  margin:10px auto;
+}
+h1,h2,h3 {
+  font-weight:bold;
+}
+
+.section-title {
+  background: url(../images/bg_h2.png) no-repeat 0 50%;
+  padding-left:30px;
+  padding-bottom:10px;
+  border-bottom:dotted 1px #999;
+}
+
+.section1 {
+  width:42%;
+  padding:1%;
+  float:left;
+  margin:-10px 20px 20px 20px;
+}
+.section2,.section3,.section4,.section5 {
+  margin:20px;
+  padding:20px 0;
+}
+.normal {
+  line-height:auto;
+  letter-spacing:normal;
+}
+.font {
+  width:40%;
+  display:inline;
+  float:left;
+  text-align: center;
+  list-style-type:none;
+  padding-bottom:30px;
+}
+.lebel1 {
+  font-size:1.4em
+}
+.lebel2 {
+  font-size:1.2em
+}
+.lebel3 {
+  font-size:1em
+}
+.lebel4 {
+  font-size:0.8em
+}
+.lebel5 {
+  font-size:0.5em
+}
+.sample {
+  border-top:1px dotted #999;
+  padding-top:10px;
+}
+
+
