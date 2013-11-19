@@ -1,92 +1,127 @@
-<!DOCTYPE>
+<!doctype html>
 <html dir="ltr" lang="ja">
-	<head>
-		<meta charset="UTF-8">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 読者を疲れさせない長文レイアウトのコツ</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="/public/9/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+</head>
+<body>
+<!-- ここからヘッダー -->
+	<div class="header">
+		<h1><span class="page-title">Layout of the long sentence</span>読者を疲れさせない長文レイアウトのコツ</h1>
+	</div>
 
-		<title>CSSers</title>
-
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-
-		<link rel="stylesheet" type="text/css" href="/public/9/css/style.css">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-	</head>
-	<body>
-		<div class="header">
-			<h1><span class="page-title">Layout of the long sentence.</span>A technique for an layout for long articles that will not tire your readers.</h1>
+<!-- ここからメインコンテンツ -->
+	<div class="wrapper">
+		<h2 class="section-title">適切な行間と文字間隔の設定</h2>
+		<div class="section1">
+			<h3>CSSで行間・文字間隔を調整しない場合</h3>
+			<p class="normal">長文を読む際、行間・文字間隔が詰まっているだけで文章全体が窮屈でとても読みにくく感じられます。
+左がCSSで何も指定していない状態の表示です。行間・文字間隔共に狭くごちゃごちゃとして見えるのでパッと見ただけで読むのが嫌になってしまいます。
+右がCSSで行間・文字間隔を調節し、ゆとりをもたせた場合の表示です。行間や文字間隔が少し空くだけでずいぶん読みやすくなります。この行間・文字間隔の設定をしてみましょう。
+長文を読む際、行間・文字間隔が詰まっているだけで文章全体が窮屈でとても読みにくく感じられます。
+左がCSSで何も指定していない状態の表示です。行間・文字間隔共に狭くごちゃごちゃとして見えるのでパッと見ただけで読むのが嫌になってしまいます。
+右がCSSで行間・文字間隔を調節し、ゆとりをもたせた場合の表示です。行間や文字間隔が少し空くだけでずいぶん読みやすくなります。この行間・文字間隔の設定をしてみましょう。</p>
 		</div>
+		<div class="section1">
+			<h3>CSSで行間・文字間隔を調整した場合</h3>
+			<p class="adjustment">長文を読む際、行間・文字間隔が詰まっているだけで文章全体が窮屈でとても読みにくく感じられます。
+左がCSSで何も指定していない状態の表示です。行間・文字間隔共に狭くごちゃごちゃとして見えるのでパッと見ただけで読むのが嫌になってしまいます。
+右がCSSで行間・文字間隔を調節し、ゆとりをもたせた場合の表示です。行間や文字間隔が少し空くだけでずいぶん読みやすくなります。この行間・文字間隔の設定をしてみましょう。
+長文を読む際、行間・文字間隔が詰まっているだけで文章全体が窮屈でとても読みにくく感じられます。
+左がCSSで何も指定していない状態の表示です。行間・文字間隔共に狭くごちゃごちゃとして見えるのでパッと見ただけで読むのが嫌になってしまいます。
+右がCSSで行間・文字間隔を調節し、ゆとりをもたせた場合の表示です。行間や文字間隔が少し空くだけでずいぶん読みやすくなります。この行間・文字間隔の設定をしてみましょう。</p>
+		</div>
+		<div class="section2 clear">
+			<h2 class="section-title">様々な文字サイズが含まれる文章のサンプル</h2>
+			<p class="whiteBox">長文を読む際、<span class="font-size18">行間・文字間隔</span>が詰まっているだけで文章全体が窮屈でとても読みにくく感じられます。
+左がCSSで何も指定していない状態の表示です。行間・文字間隔共に狭くごちゃごちゃとして見えるのでパッと見ただけで<span class="font-size8">読むのが嫌になってしまいます。</span>
+右がCSSで行間・文字間隔を調節し、ゆとりをもたせた場合の表示です。<strong class="font-size24">行間や文字間隔が少し空くだけでずいぶん読みやすく</strong>なります。この行間・文字間隔の設定をしてみましょう。</p>
+		</div>
+		<div class="section3">
+			<h2 class="section-title">フォントの選定について</h2>
+			<ul class="font">
+				<li class="lebel1">フォントの選定について</li>
+				<li class="lebel2">フォントの選定について</li>
+				<li class="lebel3">フォントの選定について</li>
+				<li class="lebel4">フォントの選定について</li>
+				<li class="lebel5">フォントの選定について</li>
+			</ul>
+			<ul class="font serif">
+				<li class="lebel1">フォントの選定について</li>
+				<li class="lebel2">フォントの選定について</li>
+				<li class="lebel3">フォントの選定について</li>
+				<li class="lebel4">フォントの選定について</li>
+				<li class="lebel5">フォントの選定について</li>
+			</ul>
 
-		<div class="wrapper">
-			<h2 class="section-title">Apt line & character spacing settings</h2>
+		</div>
+		<div class="section4 clear">
+			<h2 class="section-title">正しいマークアップで文書構造を明確にし、読みやすくする</h2>
+			<h3>ul,ol(順不同リスト・順序リスト)</h3>
 
-			<div class="section1">
-				<h3>In the case that you do not adjust line and character spacing with CSS</h3>
-        <p class="normal">長文を読む際、行間・文字間隔が詰まっているだけで文章全体が窮屈でとても読みにくく感じられます。左がCSSで何も指定していない状態の表示です。行間・文字間隔共に狭くごちゃごちゃとして見えるのでパッと見ただけで読むのが嫌になってしまいます。 右がCSSで行間・文字間隔を調節し、ゆとりをもたせた場合の表示です。行間や文字間隔が少し空くだけでずいぶん読みやすくなります。この行間・文字間隔の設定をしてみましょう。 長文を読む際、行間・文字間隔が詰まっているだけで文章全体が窮屈でとても読みにくく感じられます。 左がCSSで何も指定していない状態の表示です。行間・文字間隔共に狭くごちゃごちゃとして見えるのでパッと見ただけで読むのが嫌になってしまいます。 右がCSSで行間・文字間隔を調節し、ゆとりをもたせた場合の表示です。行間や文字間隔が少し空くだけでずいぶん読みやすくなります。この行間・文字間隔の設定をしてみましょう。</p>
-			</div>
+			<ul class="gray-box">
+				<li>アイテム1</li>
+				<li>アイテム2</li>
+				<li>アイテム3</li>
+			</ul>
+	
+			<ol class="gray-box">
+				<li>ステップ1</li>
+				<li>ステップ2</li>
+				<li>ステップ3</li>
+			</ol>
 
-			<div class="section1">
-				<h3>In the case that you do adjust line and character spacing with CSS</h3>
-        <p class="normal">長文を読む際、行間・文字間隔が詰まっているだけで文章全体が窮屈でとても読みにくく感じられます。左がCSSで何も指定していない状態の表示です。行間・文字間隔共に狭くごちゃごちゃとして見えるのでパッと見ただけで読むのが嫌になってしまいます。 右がCSSで行間・文字間隔を調節し、ゆとりをもたせた場合の表示です。行間や文字間隔が少し空くだけでずいぶん読みやすくなります。この行間・文字間隔の設定をしてみましょう。 長文を読む際、行間・文字間隔が詰まっているだけで文章全体が窮屈でとても読みにくく感じられます。 左がCSSで何も指定していない状態の表示です。行間・文字間隔共に狭くごちゃごちゃとして見えるのでパッと見ただけで読むのが嫌になってしまいます。 右がCSSで行間・文字間隔を調節し、ゆとりをもたせた場合の表示です。行間や文字間隔が少し空くだけでずいぶん読みやすくなります。この行間・文字間隔の設定をしてみましょう。</p>
-			</div>
-
-			<div class="sections2 clear">
-				<h2 class="section-title">様々な文字サイズが含まれる文章のサンプル</h2>
-        <p class="whiteBox">長文を読む際、<span class="font-size18">行間・文字間隔</span>が詰まっているだけで文章全体が窮屈でとても読みにくく感じられます。  左がCSSで何も指定していない状態の表示です。行間・文字間隔共に狭くごちゃごちゃとして見えるのでパッと見ただけで<span class="font-size8">読むのが嫌になってしまいます。</span>  右がCSSで行間・文字間隔を調節し、ゆとりをもたせた場合の表示です。<strong class="font-size24">行間や文字間隔が少し空くだけでずいぶん読みやすく</strong>なります。この行間・文字間隔の設定をしてみしょう。</p>
-	    </div>
-
-			<div class="section3">
-				<h2 class="section-title">About font settings</h2>
-				<ul class="font">
-					<li class="lebel1">About Font Settings</li>
-					<li class="lebel2">About Font Settings</li>
-					<li class="lebel3">About Font Settings</li>
-					<li class="lebel4">About Font Settings</li>
-					<li class="lebel5">About Font Settings</li>
-				</ul>
-				<ul class="font serif">
-					<li class="lebel1">About Font Settings</li>
-					<li class="lebel2">About Font Settings</li>
-					<li class="lebel3">About Font Settings</li>
-					<li class="lebel4">About Font Settings</li>
-					<li class="lebel5">About Font Settings</li>
-				</ul>
-			</div>
-
-			<div class="section4 clear">
-				<h2 class="section-title">Making things easy to read and clear by using correct markup</h2>
-				<h3>ul, ol (Unordered List and Ordered List)</h3>
-
-				<ul class="gray-box">
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li>Item 3</li>
-				</ul>
-
-				<oi class="gray-box">
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li>Item 3</li>
-				</oi>
-
-				<h3>dl (defined list)</h3>
-				<dl class="definition-list">
-					<dt>What is an defined list?</dt>
+			<h3>dl(定義リスト)</h3>
+			<dl class="definition-list">
+				<dt>定義リストとは</dt>
 					<dd>定義リストとは&lt;dt&gt;で定義する「用語」を&lt;dd&gt;で、その用語の「説明」を行います。</dd>
-					<dt>What is an ordered list</dt>
+				<dt>順序リストとは</dt>
 					<dd>&lt;ol&gt;はOrdered List(順序のあるリスト)のことです。項目を番号付きで順番に並べるときに使用します。</dd>
-				</dl>
+			</dl>
 
-				<h3>Heading (h1~h6)</h3>
-				<div class="sample">
-					<h1>Heading Level 1</h1>
-					<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a. One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head .</p>
-				</div>
+			<h3>見出しを設ける(h1〜h6)</h3>
+			<div class="sample">
+				<h1>Heading Level 1</h1>
+	
+				<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops<br>
+				One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops</p>
+			</div>
 
-				<div class="sample">
-					
-				</div>
+			<div class="sample">
+				<h2>Heading Level 2</h2>
+	
+				<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+	
+				<h3>Heading Level 3</h3>
+	
+				<p>"What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
+	
+				<h4>Heading Level 4</h4>
+				<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops</p>
+
 			</div>
 		</div>
-	</body>
+		<div class="section5">
+			<h2 class="section-title">段組みレイアウトにする</h2>
+			<div class="whiteBox">
+			<div class="multi-column-box">
+	
+			<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+		
+			<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops<br>
+			It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops</p>
+
+			<p>"What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
+		
+		</div>
+		</div>
+	  </div>
+	</div>
+<!-- ここからフッター -->
+	<div class="footer">Copyright &copy; CSS Layout of the long sentence</div>
+</body>
 </html>

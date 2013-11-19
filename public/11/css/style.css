@@ -1,0 +1,155 @@
+/* レスポンシブデザインのサンプル */
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #FFF;
+	color: #000;
+}
+
+.site-header{
+	margin-bottom: 1em;
+	padding: .2em .5em;
+	background: #000;
+	color: #FFF;
+}
+
+.site-name{
+	margin: 0;
+}
+
+.site-body{
+	width: 90%;
+	max-width: 980px;
+	margin: auto;
+}
+
+.title-box{
+	margin: 0 auto 1em;
+	padding: 1em;
+	background: #CCC;
+	text-align: center;
+	-webkit-border-radius: 1em;
+			border-radius: 1em;
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.6);
+	        box-shadow: 2px 2px 2px rgba(0,0,0,.6);
+}
+
+.writer-photo{
+	display: inline-block;
+	width: 50%;
+	max-width: 450px;
+	margin-right: 1em;
+	vertical-align: middle;
+}
+
+.writer-photo-image{
+	width: 100%;
+	max-width: 450px;
+	height: auto;
+}
+
+.text-title{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 2em;
+}
+
+.main-area{
+	overflow: hidden;
+}
+
+.contents-list{
+	float: left;
+	width: 29%;
+	background: #CCC;
+	-webkit-border-radius: .5em;
+	        border-radius: .5em;
+}
+
+.contents-nav{
+	margin: 0.5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.contents-nav li{
+	padding: .3em;
+	border-bottom: 1px solid #FFF;
+}
+
+.contents-nav li a{
+	display: block;
+}
+
+.contents-nav li:last-child{
+	border-bottom-style: none;
+}
+
+.text-area{
+	float: right;
+	width: 70%;
+}
+
+.site-footer{
+	background: #000;
+	color: #FFF;
+	text-align: center;
+}
+
+@media (max-width: 480px){
+	.writer-photo{
+		display: block;
+		width: 100%;
+		min-width: 0;
+		margin: 0 auto;
+		vertical-align: baseline;
+	}
+
+	.writer-photo-image{
+		width: 100%;
+		height: auto;
+	}
+
+	.text-title{
+		display: block;
+		margin: 0;
+		vertical-align: baseline;
+		font-size: 1.5em;
+	}
+
+	.contents-list{
+		float: none;
+		width: auto;
+		background: transparent;
+		border: solid 1px #000;
+		-webkit-border-radius: .5em;
+		        border-radius: .5em;
+		overflow: hidden;
+	}
+
+	.contents-nav{
+		margin: 0;
+	}
+
+	.contents-list li{
+		float: left;
+		width: 50%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+		text-align: center;
+	}
+
+	.contents-list li:nth-child(2n){
+		border-right: none;
+	}
+
+	.text-area{
+		float: none;
+		width: auto;
+	}
+
+}
